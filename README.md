@@ -55,9 +55,24 @@ Depois:
 
 1. Escolha a opção `1`
 2. Cole o link do video
-3. Aguarde a extração e a conversão
+3. Escolha o bitrate ou pressione `Enter` para usar `192`
+4. Aguarde a extração e a conversão
 
-O arquivo será salvo em `~/Downloads`.
+O arquivo sera salvo em `~/Downloads`.
+
+## Uso por linha de comando
+
+Tambem e possivel informar os dados diretamente pela linha de comando:
+
+```bash
+python3 baixar_mp3.py "LINK_DO_VIDEO"
+```
+
+Definindo o bitrate:
+
+```bash
+python3 baixar_mp3.py "LINK_DO_VIDEO" --bitrate 320
+```
 
 ## Dependências
 
@@ -67,5 +82,5 @@ O arquivo será salvo em `~/Downloads`.
 ## Observações
 
 - O nome do arquivo é sanitizado com `restrictfilenames=True`
-- A saída é gerada em `mp3` com qualidade `192 kbps`
+- A saida e gerada em `mp3` com bitrate configuravel: `128`, `192`, `256` ou `320`
 - A conversão usa `44.1 kHz` e áudio estéreo
