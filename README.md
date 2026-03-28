@@ -1,6 +1,6 @@
-# Baixar MP3 do YouTube
+# Extrair e Converter Audio para MP3
 
-Script simples em Python para baixar o áudio de vídeos do YouTube e converter para `mp3` usando `yt-dlp` e `ffmpeg`.
+Script simples em Python para extrair e converter o audio de um video para `mp3` usando `yt-dlp` e `ffmpeg`.
 
 ## Requisitos
 
@@ -54,14 +54,14 @@ python3 baixar_mp3.py
 Depois:
 
 1. Escolha a opção `1`
-2. Cole o link do YouTube
-3. Aguarde o download e a conversão
+2. Cole o link do video
+3. Aguarde a extração e a conversão
 
 O arquivo será salvo em `~/Downloads`.
 
 ## Dependências
 
-- `yt-dlp`: faz o download do áudio do vídeo
+- `yt-dlp`: processa o link informado e extrai o audio
 - `ffmpeg`: converte o áudio para `mp3`
 
 ## Observações
